@@ -19,7 +19,7 @@ public class BaseTest {
     public void setupTest(String browser) throws MalformedURLException {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("browserName", browser);
-        capabilities.setCapability("enableVNC", true);
+//        capabilities.setCapability("enableVNC", true);
 
         driver.set(new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities));
     }
